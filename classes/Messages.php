@@ -5,7 +5,7 @@
  * 
  * Messages object for printing messages
  * 
- * @method string print_tintytexy
+ * @method string print_message
  */
 class Messages {
 
