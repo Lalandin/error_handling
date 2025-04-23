@@ -10,15 +10,14 @@
 class Messages {
 
     /**
-     * Returns message if it has a max of 255 otherwise throws an exception
+     * Returns message if it is a string otherwise throws an exception
      *
      * @param string $message
      * @return string
      */
-    public static function print_tinytext($message) {
-        $len = strlen($message);
-        if ($len > 255) {
-            throw new Exception("der må maks bruges 255 tegn");
+    public static function print_message($message) {
+        if (gettype($message) != "string") {
+            throw new Exception("datatypen er forkert");
         } else {
             return $message;
         }
