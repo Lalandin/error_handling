@@ -4,9 +4,9 @@ require_once 'classes/Messages.php';
 
 //a try catch finally block for testing if $messages is string or not
 try {
-    echo Messages::print_message(2) . "<br>";
-} catch(Exception $e) {
+    echo Messages::print_message("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat atque, repudiandae debitis consectetur obcaecati id reprehenderit et adipisci a beatae reiciendis perspiciatis libero animi doloremque quidem, rerum, exercitationem soluta minus.") . "<br>";
+} catch(InvalidArgumentException $e) {
     echo $e->getMessage() . "<br>";
-} finally {
-    echo "finally this try / catch is done";
+} catch(UnexpectedValueException $e) {
+        echo $e->getMessage() . "<br>";
 }
