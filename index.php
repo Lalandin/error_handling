@@ -2,7 +2,7 @@
 
 require_once 'classes/Messages.php';
 
-//a try catch finally block for testing if $messages is string or not
+//a try catch block for testing if $messages is string or not and then length of string
 try {
     echo Messages::print_message("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat atque, repudiandae debitis consectetur obcaecati id reprehenderit et adipisci a beatae reiciendis perspiciatis libero animi doloremque quidem, rerum, exercitationem soluta minus.") . "<br>";
 } catch(InvalidArgumentException $e) {
